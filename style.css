@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+    background: url("./images/amu.jpg") center/cover no-repeat;
+    min-height: 300px;
+    padding: 5px 0;
+}
+
+.main-intro {
+    max-width: 62.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.amu-intro, .login-intro {
+    max-width: 500px;
+    width: 100%;
+}
+
+.amu-intro img {
+    max-width: 100%;
+    height: auto;
+}
+
+.amu-intro h1 {
+    font-size: 25px;
+    color: white;
+    margin: 3px 0 8px;
+}
+
+.amu-intro hr {
+    margin: 20px 0;
+}
+
+.amu-intro p {
+    font-size: 18px;
+    color: white;
+    margin: 3px 0 8px;
+    word-wrap: break-word;
+}
+
+.login-intro {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 4px;
+}
+.login-form{
+    padding: 17px 30px 30px;
+}
+.login-form h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #484f85;
+    margin: 3.2px 0 8px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 25px;
+    height: 126px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.form-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68.33px;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 14px;
+    height: 37.4px;
+    line-height: 37px;
+}
+
+.text1, .text2 {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: #ecf0f8;
+    height: 34.3px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 66.93px;
+    height: 33px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background-color 300ms;
+}
+
+.btn:hover {
+    background-color: #005d7c;
+}
+
+.btn-2 {
+    width: 126.26px;
+    height: 33px;
+    background-color: #e7e7e7;
+    color: #333333;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background-color 300ms;
+}
+
+.btn-2:hover {
+    background-color: #a6a6a6;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: #ecf0f8;
+    padding: 20px;
+}
+
+.menu-item {
+    background: white;
+    color: #7d7d7d;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-item div {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.menu-item a {
+    color: #007842;
+    text-decoration: none;
+}
+
+.fa.fa-calendar, .fa.fa-commenting, .fa.fa-laptop, .fa.fa-cloud, .fa.fa-user-circle {
+    font-size: 45px;
+    color: #007842;
+    transition: color 300ms;
+}
+
+.fa.fa-calendar:hover, .fa.fa-commenting:hover, .fa.fa-laptop:hover, .fa.fa-cloud:hover {
+    color: black;
+}
+
+h6.text-menu {
+    font-size: 16px;
+    text-align: center;
+    color: #7d7d7d;
+    margin: 3.2px 0 8px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35.6px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .top-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .login-intro {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .amu-intro, .login-intro {
+        max-width: 100%;
+    }
+    
+    .menu {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .amu-intro, .login-intro {
+        padding: 0 10px;
+    }
+    
+    .amu-intro p {
+        font-size: 14px;
+    }
+    
+    .menu {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    
+    .menu-item {
+        padding: 10px;
+    }
+}
