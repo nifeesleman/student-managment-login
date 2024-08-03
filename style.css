@@ -158,9 +158,9 @@ body {
     text-decoration: none;
 }
 
-.fa.fa-calendar, .fa.fa-commenting, .fa.fa-laptop, .fa.fa-cloud, .fa.fa-user-circle {
+.fa-solid.fa-calendar-days, .fa.fa-commenting, .fa.fa-laptop, .fa.fa-cloud, .fa.fa-user-circle {
     font-size: 45px;
-    color: #007842;
+    color: #77c7c4;
     transition: color 300ms;
 }
 
